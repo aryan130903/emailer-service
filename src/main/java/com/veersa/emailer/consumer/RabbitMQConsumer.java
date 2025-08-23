@@ -19,7 +19,6 @@ public class RabbitMQConsumer {
         System.out.println("📩 Received email request for: " + email.getTo());
         System.out.println("Subject: " + email.getSubject());
         System.out.println("Body: " + email.getBody());
-
         emailService.sendEmail(email);
     }
 }
